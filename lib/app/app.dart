@@ -4,9 +4,6 @@ import 'package:flutter/material.dart';
 
 import '../router/router.dart';
 
-final rootScaffoldMessengerKey = GlobalKey<ScaffoldMessengerState>();
-final navigatorKey = GlobalKey<NavigatorState>();
-
 class App extends StatefulWidget {
   const App({super.key});
 

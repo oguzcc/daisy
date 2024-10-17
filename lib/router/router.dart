@@ -7,6 +7,7 @@ import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
 final rootScaffoldKey = GlobalKey<ScaffoldState>();
+final rootScaffoldMessengerKey = GlobalKey<ScaffoldMessengerState>();
 final rootNavigatorKey = GlobalKey<NavigatorState>(debugLabel: 'root');
 final shellNavigatorKey = GlobalKey<NavigatorState>(debugLabel: 'shell');
 

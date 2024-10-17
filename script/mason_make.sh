@@ -1,1 +1,0 @@
-mason make <brick-name> -o ./lib/data
