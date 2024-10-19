@@ -1,7 +1,7 @@
 // ignore_for_file: public_member_api_docs, sort_constructors_first
 
 import 'package:daisy/core/extension/context_extension.dart';
-import 'package:daisy/ui/util/strings/strings.dart';
+import 'package:daisy/ui/util/manager/strings.dart';
 import 'package:daisy/ui/widget/gap/gap.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';

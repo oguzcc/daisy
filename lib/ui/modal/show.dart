@@ -1,6 +1,6 @@
 import 'package:daisy/core/extension/context_extension.dart';
 import 'package:daisy/ui/modal/wolt_layout.dart';
-import 'package:daisy/ui/util/strings/strings.dart';
+import 'package:daisy/ui/util/manager/strings.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:wolt_modal_sheet/wolt_modal_sheet.dart';

@@ -1,5 +1,5 @@
 import 'package:daisy/core/extension/context_extension.dart';
-import 'package:daisy/ui/util/manager/asset_manager.dart';
+import 'package:daisy/ui/util/manager/assets.dart';
 import 'package:daisy/ui/widget/gap/gap.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';

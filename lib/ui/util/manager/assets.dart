@@ -3,7 +3,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
-sealed class AssetManager {
+sealed class Assets {
   String getFlag(String code) => code.toFlag;
 
   // Flag

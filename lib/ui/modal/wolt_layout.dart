@@ -1,7 +1,7 @@
 import 'package:daisy/core/extension/context_extension.dart';
 import 'package:daisy/core/extension/string_extension.dart';
 import 'package:daisy/ui/util/size/app_padding.dart';
-import 'package:daisy/ui/util/strings/strings.dart';
+import 'package:daisy/ui/util/manager/strings.dart';
 import 'package:daisy/ui/widget/button/button.dart';
 import 'package:daisy/ui/widget/gap/gap.dart';
 import 'package:flutter/material.dart';
