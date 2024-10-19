@@ -1,9 +1,9 @@
-import 'package:daisy/app/app.dart';
-import 'package:daisy/app/bootstrap.dart';
 import 'package:daisy/core/config/api_options.dart';
 import 'package:daisy/core/config/app_flavor.dart';
 
-void main() {
+import 'main.dart' as runner;
+
+Future<void> main() async {
   AppFlavor(apiOptions: ApiOption.staging());
-  bootstrap(() => const App());
+  await runner.main();
 }

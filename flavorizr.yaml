@@ -1,0 +1,36 @@
+flavors:
+  development:
+    app:
+      name: 'Daisy [DEV]'
+    android:
+      applicationId: 'com.example.daisy.dev'
+      # firebase:
+      #   config: '.firebase/production/google-services.json'
+    ios:
+      bundleId: 'com.example.daisy.dev'
+      # firebase:
+      #   config: '.firebase/production/GoogleService-Info.plist'
+
+  staging:
+    app:
+      name: 'Daisy [STG]'
+    android:
+      applicationId: 'com.example.daisy.stg'
+      # firebase:
+      #   config: '.firebase/production/google-services.json'
+    ios:
+      bundleId: 'com.example.daisy.stg'
+      # firebase:
+      #   config: '.firebase/production/GoogleService-Info.plist'
+
+  production:
+    app:
+      name: 'Daisy'
+    android:
+      applicationId: 'com.example.daisy'
+      # firebase:
+      #   config: '.firebase/production/google-services.json'
+    ios:
+      bundleId: 'com.example.daisy'
+      # firebase:
+      #   config: '.firebase/production/GoogleService-Info.plist'
