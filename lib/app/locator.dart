@@ -1,7 +1,7 @@
 import 'package:daisy/core/config/app_flavor.dart';
-import 'package:daisy/core/manager/local/hive_client.dart';
-import 'package:daisy/core/manager/local/secure_storage_client.dart';
-import 'package:daisy/core/manager/local/shared_client.dart';
+import 'package:daisy/core/manager/storage/hive_client.dart';
+import 'package:daisy/core/manager/storage/secure_storage_client.dart';
+import 'package:daisy/core/manager/storage/shared_client.dart';
 import 'package:daisy/core/manager/remote/dio_client.dart';
 import 'package:daisy/data/repo/auth_repo.dart';
 import 'package:daisy/data/service/auth_service.dart';

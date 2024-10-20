@@ -2,7 +2,7 @@ import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_secure_storage/flutter_secure_storage.dart';
 
-import '../../local/secure_storage_client.dart';
+import '../../storage/secure_storage_client.dart';
 
 class ErrorHandlerInceptor extends Interceptor {
   final Dio dio;
