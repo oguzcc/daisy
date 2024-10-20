@@ -83,5 +83,29 @@
     "week": "hafta",
     "month": "ay",
     "year": "yıl"
+  },
+  "validation": {
+    "required": "Bu alan gereklidir",
+    "email": "Lütfen geçerli bir e-posta adresi girin",
+    "phone": "Lütfen geçerli bir telefon numarası girin",
+    "password": "Şifre en az 6 karakter olmalıdır",
+    "zip": "Lütfen geçerli bir posta kodu girin",
+    "url": "Lütfen geçerli bir URL girin",
+    "number": "Lütfen geçerli bir sayı girin"
+  },
+  "info": {
+    "copiedToClipboard": "Panoya kopyalandı"
+  },
+  "warning": {
+    "offline": "Çevrimdışısınız",
+    "online": "Çevrimiçisiniz",
+    "noConnection": "İnternet bağlantısı yok"
+  },
+  "error": {
+    "network": "Ağ hatası",
+    "server": "Sunucu hatası",
+    "timeout": "İstek zaman aşımına uğradı",
+    "unknown": "Bilinmeyen hata",
+    "default": "Bir hata oluştu. Lütfen daha sonra tekrar deneyin."
   }
 }

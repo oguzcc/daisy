@@ -107,5 +107,29 @@
       "one": "year",
       "many": "years"
     }
+  },
+  "validation": {
+    "required": "This field is required",
+    "email": "Please enter a valid email address",
+    "phone": "Please enter a valid phone number",
+    "password": "Password must be at least 6 characters",
+    "zip": "Please enter a valid zip code",
+    "url": "Please enter a valid URL",
+    "number": "Please enter a valid number"
+  },
+  "info": {
+    "copiedToClipboard": "Copied to clipboard"
+  },
+  "warning": {
+    "offline": "You are offline",
+    "online": "You are online",
+    "noConnection": "No internet connection"
+  },
+  "error": {
+    "network": "Network error",
+    "server": "Server error",
+    "timeout": "Request timeout",
+    "unknown": "Unknown error",
+    "default": "An error occurred. Please try again later."
   }
 }
