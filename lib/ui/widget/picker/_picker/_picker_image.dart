@@ -22,14 +22,15 @@ class _PickerImageState extends State<_PickerImage> {
   Widget build(BuildContext context) {
     return CupertinoActionSheet(
       cancelButton: CupertinoActionSheetAction(
-        child: const Text(Strings.cancel, style: TextStyle(color: Colors.red)),
+        child: Text(LocaleKeys.common_cancel.t,
+            style: TextStyle(color: Colors.red)),
         onPressed: () => Navigator.of(context).pop(),
       ),
       actions: [
         ColoredBox(
           color: Colors.white,
           child: CupertinoActionSheetAction(
-            child: const Text(Strings.openGallery),
+            child: Text(LocaleKeys.common_openGallery.t),
             onPressed: () async {
               Navigator.of(context).pop();
               await pickFromGallery()
@@ -40,7 +41,7 @@ class _PickerImageState extends State<_PickerImage> {
         ColoredBox(
           color: Colors.white,
           child: CupertinoActionSheetAction(
-            child: const Text(Strings.openCamera),
+            child: Text(LocaleKeys.common_openCamera.t),
             onPressed: () async {
               Navigator.of(context).pop();
               await pickFromCamera()

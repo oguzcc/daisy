@@ -1,6 +1,7 @@
 import 'package:daisy/core/extension/context_extension.dart';
+import 'package:daisy/core/extension/string_extension.dart';
+import 'package:daisy/localization/locale_keys/locale_keys.g.dart';
 import 'package:daisy/ui/modal/wolt_layout.dart';
-import 'package:daisy/ui/util/manager/strings.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:wolt_modal_sheet/wolt_modal_sheet.dart';
@@ -234,7 +235,7 @@ sealed class Show {
             onPressed: () {
               ScaffoldMessenger.of(context).hideCurrentMaterialBanner();
             },
-            child: Text(Strings.close,
+            child: Text(LocaleKeys.common_close.t,
                 style: context.text.bodySmall
                     ?.copyWith(color: context.colorScheme.onSurface)),
           ),

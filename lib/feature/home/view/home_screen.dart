@@ -1,5 +1,5 @@
+import 'package:daisy/core/extension/string_extension.dart';
 import 'package:daisy/localization/locale_keys/locale_keys.g.dart';
-import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 
 part '../mixin/home_mixin.dart';
@@ -22,12 +22,12 @@ class _HomeScreenState extends State<HomeScreen> with HomeMixin {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Home Screen'),
+        title: Text(LocaleKeys.common_home.t),
       ),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-          children: [Text(LocaleKeys.home.tr())],
+          children: [Text(LocaleKeys.common_home.t)],
         ),
       ),
     );

@@ -1,7 +1,7 @@
 import 'package:daisy/core/extension/context_extension.dart';
 import 'package:daisy/core/extension/string_extension.dart';
+import 'package:daisy/localization/locale_keys/locale_keys.g.dart';
 import 'package:daisy/ui/util/size/app_padding.dart';
-import 'package:daisy/ui/util/manager/strings.dart';
 import 'package:daisy/ui/widget/button/button.dart';
 import 'package:daisy/ui/widget/gap/gap.dart';
 import 'package:flutter/material.dart';
@@ -74,7 +74,7 @@ class WoltLayout {
               if (onButtonPressed != null) ...[
                 const Gap.xl(),
                 Button.elevated(
-                  label: buttonTitle ?? Strings.done,
+                  label: buttonTitle ?? LocaleKeys.common_done.t,
                   onPressed: () {
                     onButtonPressed.call();
                     backToFirstPage();
@@ -84,7 +84,7 @@ class WoltLayout {
               if (cancelButton == true) ...[
                 const Gap.sm(),
                 Button.outlined(
-                  label: Strings.cancel,
+                  label: LocaleKeys.common_cancel.t,
                   onPressed: () {
                     backToFirstPage();
                     Navigator.of(context).pop();

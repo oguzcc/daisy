@@ -1,3 +1,5 @@
+import 'package:easy_localization/easy_localization.dart';
+
 extension StringExtension on String {
   String overflow(int length) {
     return this.length > length ? '${substring(0, length)}...' : this;
@@ -21,4 +23,8 @@ extension NullableString on String? {
   }
 
   bool isNotNullOrEmpty() => this != null && this!.isNotEmpty;
+}
+
+extension LocalizationExtension on String {
+  String get t => this.tr();
 }

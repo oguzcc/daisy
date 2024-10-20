@@ -106,5 +106,7 @@ or
 then use strings like this:
 
 ```dart
-Text(LocaleKeys.helloWorld.tr())
+import 'package:daisy/core/extension/string_extension.dart';
+
+Text(LocaleKeys.helloWorld.t)
 ```

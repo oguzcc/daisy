@@ -1,5 +1,111 @@
 {
-  "welcome": "Welcome",
-  "home": "Home",
-  "about": "About"
+  "common": {
+    "welcome": "Welcome",
+    "home": "Home",
+    "profile": "Profile",
+    "about": "About",
+
+    "name": "Name",
+    "email": "Email",
+    "phone": "Phone",
+    "password": "Password",
+    "address": "Address",
+    "city": "City",
+    "state": "State",
+    "zip": "Zip",
+    "country": "Country",
+
+    "save": "Save",
+    "cancel": "Cancel",
+    "edit": "Edit",
+    "delete": "Delete",
+    "add": "Add",
+    "search": "Search",
+    "clear": "Clear",
+    "close": "Close",
+    "back": "Back",
+    "next": "Next",
+    "submit": "Submit",
+    "done": "Done",
+    "reset": "Reset",
+    "yes": "Yes",
+    "no": "No",
+    "ok": "OK",
+    "confirm": "Confirm",
+    "error": "Error",
+    "warning": "Warning",
+    "info": "Info",
+    "success": "Success",
+    "loading": "Loading",
+    "openGallery": "Open Gallery",
+    "openCamera": "Open Camera"
+  },
+  "datetime": {
+    "today": "Today",
+    "yesterday": "Yesterday",
+    "tomorrow": "Tomorrow",
+    "ago": "ago",
+    "now": "now",
+    "justNow": "just now",
+    "lastWeek": "Last week",
+    "lastMonth": "Last month",
+    "lastYear": "Last year",
+    "nextWeek": "Next week",
+    "nextMonth": "Next month",
+    "nextYear": "Next year",
+
+    "january": "January",
+    "february": "February",
+    "march": "March",
+    "april": "April",
+    "may": "May",
+    "june": "June",
+    "july": "July",
+    "august": "August",
+    "september": "September",
+    "october": "October",
+    "november": "November",
+    "december": "December",
+
+    "sunday": "Sunday",
+    "monday": "Monday",
+    "tuesday": "Tuesday",
+    "wednesday": "Wednesday",
+    "thursday": "Thursday",
+    "friday": "Friday",
+    "saturday": "Saturday",
+
+    "millisecond": {
+      "one": "millisecond",
+      "many": "milliseconds"
+    },
+    "second": {
+      "one": "second",
+      "many": "seconds"
+    },
+    "minute": {
+      "one": "minute",
+      "many": "minutes"
+    },
+    "hour": {
+      "one": "hour",
+      "many": "hours"
+    },
+    "day": {
+      "one": "day",
+      "many": "days"
+    },
+    "week": {
+      "one": "week",
+      "many": "weeks"
+    },
+    "month": {
+      "one": "month",
+      "many": "months"
+    },
+    "year": {
+      "one": "year",
+      "many": "years"
+    }
+  }
 }
