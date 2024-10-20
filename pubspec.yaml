@@ -32,6 +32,7 @@ dependencies:
   image_picker: ^1.1.2
   intl: ^0.19.0
   json_annotation: ^4.9.0
+  path_provider: ^2.1.4
   permission_handler: ^11.3.1
   pretty_dio_logger: ^1.4.0
   sentry_dio: ^8.9.0

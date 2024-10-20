@@ -1,5 +1,6 @@
 import 'package:connectivity_plus/connectivity_plus.dart';
 import 'package:daisy/core/bloc/conn/conn_cubit.dart';
+import 'package:daisy/core/bloc/lang/lang_cubit.dart';
 import 'package:daisy/feature/auth/cubit/auth_cubit.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -11,6 +12,9 @@ List<BlocProvider<StateStreamableSource<Object?>>> provider() {
 
     /// Auth Cubit
     BlocProvider<AuthCubit>(create: (context) => AuthCubit(context.read())),
+
+    /// Lang Cubit
+    BlocProvider<LangCubit>(create: (context) => LangCubit()),
 
     /// User Cubit
   ];

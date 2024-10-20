@@ -8,22 +8,7 @@ This project is a starting point for a Flutter application.
 
 ## Running the app
 
-To run the app, run the following command:
-
-```bash
-# For development
-flutter run --flavor development -t lib/main_development.dart
-```
-
-```bash
-# For staging
-flutter run --flavor staging -t lib/main_staging.dart
-```
-
-```bash
-# For production
-flutter run --flavor production -t lib/main_production.dart
-```
+To run the app, open run and debug section in your IDE and select the desired device and press the run button.
 
 ## Flavor
 
@@ -99,4 +84,27 @@ To generate the app icons, first paste your app logo instead of
 ```bash
 flutter pub get
 dart run flutter_launcher_icons
+```
+
+## Localization
+
+This project uses [Easy Localization](https://pub.dev/packages/easy_localization) package to manage the localization.
+
+To generate the localization,
+First add your strings to the `assets/translation` folder and then
+
+run the following command:
+
+```bash
+dart run easy_localization:generate -O lib/localization/locale_keys -f keys -o locale_keys.g.dart -S assets/translation
+```
+
+or
+
+`script/lang.sh`
+
+then use strings like this:
+
+```dart
+Text(LocaleKeys.helloWorld.tr())
 ```

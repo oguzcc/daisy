@@ -1,3 +1,5 @@
+import 'package:daisy/localization/locale_keys/locale_keys.g.dart';
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 
 part '../mixin/home_mixin.dart';
@@ -22,10 +24,10 @@ class _HomeScreenState extends State<HomeScreen> with HomeMixin {
       appBar: AppBar(
         title: const Text('Home Screen'),
       ),
-      body: const Center(
+      body: Center(
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [Text('Home Screen')],
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          children: [Text(LocaleKeys.home.tr())],
         ),
       ),
     );

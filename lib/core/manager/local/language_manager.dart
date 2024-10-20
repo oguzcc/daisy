@@ -9,24 +9,20 @@ class LanguageManager {
   static LanguageManager? _instance;
   static LanguageManager get instance => _instance ??= LanguageManager._();
 
-  final enLocale = const Locale('en');
-  final trLocale = const Locale('tr');
+  final enLocale = const Locale('en', 'US');
+  final trLocale = const Locale('tr', 'TR');
 
-  List<Locale> get supportedLocales => [
-        enLocale,
-        trLocale,
-      ];
+  List<Locale> get supportedLocales => [enLocale, trLocale];
 
   // constants
-  static const supportedLanguages = <String>['en', 'tr'];
-
-  Locale getCurrentLocale() => supportedLanguages.contains(getCurrentLang)
-      ? Locale(getCurrentLang)
-      : const Locale('en');
+  static const supportedLanguages = <Locale>[
+    Locale('en', 'US'),
+    Locale('tr', 'TR'),
+  ];
 
   Locale get fallbackLocale => enLocale;
 
-  String get getCurrentLang => Platform.localeName.substring(0, 2);
+  Locale get getCurrentLocale => Locale(Platform.localeName);
 
   String get path => 'assets/translation';
 }

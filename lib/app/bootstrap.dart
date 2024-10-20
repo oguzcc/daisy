@@ -3,14 +3,18 @@ import 'dart:async';
 import 'dart:developer';
 
 // Third-party package imports
+import 'package:daisy/core/bloc/bloc_observer.dart';
 import 'package:daisy/core/config/core_strings.dart';
 import 'package:daisy/core/manager/local/language_manager.dart';
 import 'package:daisy/core/manager/remote/sentry_client.dart';
 import 'package:easy_localization/easy_localization.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:hive_flutter/hive_flutter.dart';
+import 'package:hydrated_bloc/hydrated_bloc.dart';
+import 'package:path_provider/path_provider.dart';
 
 // Local imports: Core
 
@@ -20,6 +24,8 @@ import 'locator.dart';
 import 'provider.dart';
 
 Future<void> bootstrap(FutureOr<Widget> Function() builder) async {
+  Bloc.observer = const AppBlocObserver();
+
   // Error handling setup
   FlutterError.onError = (details) {
     log(details.exceptionAsString(), stackTrace: details.stack);
@@ -56,6 +62,12 @@ Future<void> _initializeApp() async {
 ║   HYDRATED BLOC INITIALIZE    ║
 ╚═══════════════════════════════╝
   */
+
+  HydratedBloc.storage = await HydratedStorage.build(
+    storageDirectory: kIsWeb
+        ? HydratedStorage.webStorageDirectory
+        : await getApplicationDocumentsDirectory(),
+  );
 
   /*
 ╔═══════════════════════════════╗
@@ -98,7 +110,6 @@ Future<void> _runAppWithSentry(FutureOr<Widget> Function() builder) async {
     appRunner: () async => runApp(
       EasyLocalization(
         path: LanguageManager.instance.path,
-        useOnlyLangCode: true,
         supportedLocales: LanguageManager.instance.supportedLocales,
         useFallbackTranslations: true,
         startLocale: LanguageManager.instance.enLocale,

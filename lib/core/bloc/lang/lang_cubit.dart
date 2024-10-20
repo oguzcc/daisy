@@ -1,31 +1,21 @@
 import 'package:easy_localization/easy_localization.dart';
+import 'package:equatable/equatable.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:freezed_annotation/freezed_annotation.dart';
-import 'package:shared_preferences/shared_preferences.dart';
+import 'package:hydrated_bloc/hydrated_bloc.dart';
 
-part 'lang_cubit.freezed.dart';
 part 'lang_state.dart';
 
-class LangCubit extends Cubit<LangState> {
-  LangCubit() : super(const LangState());
+class LangCubit extends HydratedCubit<LangState> {
+  LangCubit() : super(LangState.initial());
 
-  Future<void> changeLocale(BuildContext context, String locale) async {
-    context.setLocale(Locale(locale));
-
-    final prefs = await SharedPreferences.getInstance();
-    await prefs.setString('locale', locale);
-
-    emit(state.copyWith(locale: Locale(locale)));
+  Future<void> changeLocale(BuildContext context, Locale locale) async {
+    context.setLocale(locale);
+    emit(state.copyWith(locale: locale));
   }
 
-  Future<void> initLocale(BuildContext context) async {
-    final prefs = await SharedPreferences.getInstance();
-    final locale = prefs.getString('locale') ?? 'en';
-    if (context.mounted) {
-      await context.setLocale(Locale(locale));
-    }
+  @override
+  LangState fromJson(Map<String, dynamic> json) => LangState.fromJson(json);
 
-    emit(state.copyWith(locale: Locale(locale)));
-  }
+  @override
+  Map<String, dynamic> toJson(LangState state) => state.toJson();
 }
